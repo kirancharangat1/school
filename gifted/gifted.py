@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df = pd.read_csv("your_dataset.csv")
+df = pd.read_csv("gifted/data - gifted.csv")
 
 # Define columns
 ethnic_columns = [
