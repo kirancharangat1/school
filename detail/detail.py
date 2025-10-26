@@ -18,7 +18,7 @@ st.set_page_config(
 # Replace this with your actual dataset path
 @st.cache_data
 def load_data():
-    detail = pd.read_csv("Data - Detail.csv")
+    detail = pd.read_csv("detail/Data - Detail.csv")
     return detail
 
 detail = load_data()
@@ -109,4 +109,5 @@ Use the sidebar to filter by category, gender, or grade.
 st.plotly_chart(fig, use_container_width=True)
 
 st.dataframe(agg_data.rename(columns={gifted_category: f"Total {gifted_category} Students"}))
+
 
